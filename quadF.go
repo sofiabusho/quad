@@ -9,10 +9,11 @@ import "github.com/01-edu/z01"
 func QuadF(x, y int) {
 	if x > 0 && y > 0 {
 		z01.PrintRune('o')
-		for i := 2; i < x; i++ {
-			z01.PrintRune('-')
-		}
 		if x != 1 {
+			for i := 2; i < x; i++ {
+				z01.PrintRune('-')
+			}
+
 			z01.PrintRune('o')
 		}
 		z01.PrintRune('\n')
@@ -20,10 +21,11 @@ func QuadF(x, y int) {
 		if y != 1 {
 			for j := 2; j < y; j++ {
 				z01.PrintRune('|')
-				for i := 2; i < x; i++ {
-					z01.PrintRune(' ')
-				}
 				if x != 1 {
+					for i := 2; i < x; i++ {
+						z01.PrintRune(' ')
+					}
+
 					z01.PrintRune('|')
 				}
 				z01.PrintRune('\n')
